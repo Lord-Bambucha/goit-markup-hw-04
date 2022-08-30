@@ -153,13 +153,15 @@ a{
 /*   hero   */
 
 .hero{
+    max-width: 1600px;
+    padding: 200px 0;
+    margin-left: auto;
+    margin-right: auto;
+
     background: var(--backgr-dark-grey);
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 1600px;
-    
-    padding: 200px 0;
 }
 
 .hero-cont{
@@ -232,10 +234,13 @@ a{
 }
 
 .advantages-cont-icon{
-    padding-top: 25px;
-    padding-bottom: 25px;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 120px;
     margin-bottom: 30px;
+
     background-color: var(--backgr-light-grey);
 }
 
@@ -418,6 +423,7 @@ border-radius: 0px 0px 4px 4px;
 
 .footer .container{
     display: flex;
+    align-items: baseline;
 }
 
 .logo-footer{
@@ -451,8 +457,7 @@ border-radius: 0px 0px 4px 4px;
 }
 
 .right-side{
-    margin-left: 72px;
-    margin-top: 12px;
+    margin-left: 70px;
 }
 
 .title-social-links{
@@ -499,6 +504,8 @@ border-radius: 0px 0px 4px 4px;
 
 
 
+
+
 /*    Portfolio    */
 
 .filters-list{
@@ -537,7 +544,12 @@ border-radius: 0px 0px 4px 4px;
     /* gap: 30px; */
 }
 
-.portfolio-item:hover, .portfolio-item:focus {
+.portfolio-item-link{
+    display: block;
+}
+
+.portfolio-item-link:hover,
+.portfolio-item-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
@@ -566,6 +578,7 @@ border-radius: 0px 0px 4px 4px;
     line-height: 2;
     letter-spacing: 0.06em;
     margin-bottom: 4px;
+    color: var(--main-color);
 }
 
 .examples-work-types{
